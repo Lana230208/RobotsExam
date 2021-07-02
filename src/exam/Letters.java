@@ -6,15 +6,16 @@ public class Letters {
     static final String LETTERS = "QWEASDZXC";
 
     public static String random5(){
-        Random r = new Random();
-        String s = "";
-        while (s.length() < 5){
-            int i = r.nextInt(LETTERS.length());
-            if (!s.contains(LETTERS.substring(i, i+1))){
-                s = s + LETTERS.substring(i, i+1);
+        Random randomNumbers = new Random();
+        String line = "";
+        while (line.length() < 5){
+            int i = randomNumbers.nextInt(LETTERS.length());
+            //If line doesn't contain letter from LETTERS
+            if (!line.contains(LETTERS.substring(i, i+1))){
+                line = line + LETTERS.substring(i, i+1);
             }
         }
-        return s;
+        return line;
     }
 }
 

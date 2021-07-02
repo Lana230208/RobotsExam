@@ -19,6 +19,8 @@ public class Robot {
             this.life = this.life - 20;
 // Delete used letter to not repeat it anymore
             this.activeLetters = this.activeLetters.replace (letter, "");
+        } else{
+            System.out.println(String.format("%s: this letter isn't in activeLetters", this.name));
         }
         return this.life > 0;
         //Life > 0, значит, живой робот
