@@ -23,6 +23,6 @@ public class Robot {
             System.out.println(String.format("%s: this letter isn't in activeLetters", this.name));
         }
         return this.life > 0;
-        //Life > 0, значит, живой робот
+        //Life > 0, means that robot is alive
     }
 }
